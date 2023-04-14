@@ -4,7 +4,7 @@ function Tab(props) {
   return (
     <div className='tab'>
     
-    <a href='' id= {`${props.tabNames}- Tab`} > {props.tabNames}</a>
+    <a href='' id= {`${props.tabName}- Tab`} > {props.tabName}</a>
     
     </div>
   )

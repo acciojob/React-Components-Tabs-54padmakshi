@@ -6,7 +6,7 @@ function Tabs({tabNames}) {
     <div className='tabs'>
      {
       tabNames.map (
-        (value,index)=> ( <Tab key={index} value ={value} />) )
+        (tabName,index)=> ( <Tab key={index} tabName ={tabName} />) )
      }
     </div>
   )
