@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Tabs from './Tabs';
+import { useState } from 'react';
 
 function App() {
+  const [tabNames , setTabNames] = useState(["Home", "About","Features"])
   return (
-    <div className='tabs'>
-      <a href='Home' className='Home-tab'> Home</a>
-      <a href='About'className='About-tab'>About</a>
-      <a href='Features' className='Features-tab'> Features</a>
+    <div className='app'>
+         <div >
+          <Tabs tabNames={tabNames} />
+          <div className='viewport'> Pages Go Here</div>
+         </div>
+
     </div>
   )
 }
